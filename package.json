@@ -1,0 +1,53 @@
+{
+  "name": "sugana-frontend-react",
+  "version": "1.0.0",
+  "description": "SAGUNA wants to create an Associate Management System to manage its associates in the organization using Node.js and React.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && webpack --config ./config/webpack.prod.js",
+    "start": "webpack serve --open --config ./config/webpack.dev.js",
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilkr16/sugana-frontend-react.git"
+  },
+  "keywords": [
+    "Javascript",
+    "ReactJS",
+    "Admin",
+    "UI"
+  ],
+  "author": "Anil Kumar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anilkr16/sugana-frontend-react/issues"
+  },
+  "homepage": "https://github.com/anilkr16/sugana-frontend-react#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^5.2.0",
+    "react-select": "^4.3.1",
+    "sass": "^1.37.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-react": "^7.14.5",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.2.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "nodemon": "^2.0.12",
+    "sass-loader": "^12.1.0",
+    "style-loader": "^3.2.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.50.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-dev-middleware": "^5.0.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.8.0"
+  }
+}

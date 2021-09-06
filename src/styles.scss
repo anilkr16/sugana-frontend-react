@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+$assets-path: '../assets/images';
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  color: #4d4d4d;
+  background: white;
+}
+#title {
+  text-align: center;
+}
+#datatable {
+  border-collapse: collapse;
+  border: 3px solid #ddd;
+  width: 950px;
+	margin: auto;
+}
+#datatable th {
+  text-align: center;
+}
+#datatable td,
+#datatable th {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+#datatable tr:hover {
+  background-color: #ddd;
+}
+.highlight-row {
+  background-color: #ddd;
+}
+
+#datatable th {
+  padding: 10px;
+  text-align: center;
+  background-color: orange;
+  color: white;
+}
+
+.opration {
+  text-align: center;
+}
+#datatable td .delete-icon {
+    background-image: url('#{$assets-path}/delete-icon.svg');
+}
+td .delete-icon {
+    background-image: url('#{$assets-path}/delete-icon.svg');
+}
+#datatable img:hover {
+  cursor: pointer;
+}
+.search {
+  input[type=text] {
+    font-weight: 500;
+    padding: 10px;
+    width: 100px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width: 100%;
+  }
+}
